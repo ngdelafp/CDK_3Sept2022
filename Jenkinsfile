@@ -5,6 +5,9 @@ pipeline {
       steps {
         sh 'ls -ltr'
         sh 'docker --version'
+        sh '''whoami
+env'''
+        sh 'docker ps'
       }
     }
 
